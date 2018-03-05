@@ -1,0 +1,22 @@
+{
+  "name": "tabeeb",
+  "version": "0.0.1",
+  "description": "blockchain prescriptions",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "author": "saad",
+  "email": "saadjumani@yahoo.com",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "composer-admin": "latest",
+    "composer-client": "latest",
+    "composer-common": "latest",
+    "composer-connector-embedded": "latest",
+    "chai": "latest",
+    "eslint": "latest",
+    "istanbul": "latest",
+    "mkdirp": "latest",
+    "mocha": "latest"
+  }
+}

@@ -1,0 +1,46 @@
+/**
+ * Write your model definitions here
+ */
+
+namespace org.acme.biznet
+
+/**/
+
+
+asset Prescription identified by pre_id {
+  o String pre_id
+  o String patient_id
+	o String doctor_id
+	o String prescription_data
+}
+
+asset Invoice identified by presc_id {
+	o String presc_id
+  o String Ammount
+}
+
+participant Doctor identified by doctor_id {
+
+	o String doctor_id
+	o String name
+	o String organization
+
+}
+
+participant Patient identified by patient_id {
+	o String patient_id
+	o String name
+}
+
+transaction Forward {
+	--> Prescription prescription
+    o String newStatus
+}
+
+/**/
+
+
+transaction ChangeAssetValue {
+  o String newValue
+  --> Asset relatedAsset
+}
